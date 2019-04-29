@@ -1,0 +1,326 @@
+.flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+
+.flex-row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+}
+
+.flex-col {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+}
+
+.flex-grow-0 {
+  min-width: 0;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.flex-grow-1 {
+  min-width: 0;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  -ms-flex-negative: 1;
+  flex-shrink: 1;
+}
+
+.flex-x-center {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.flex-x-right {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.flex-y-center {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  -ms-grid-row-align: center;
+  align-items: center;
+}
+
+.flex-y-bottom {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+  -ms-flex-align: end;
+  -ms-grid-row-align: flex-end;
+  align-items: flex-end;
+}
+
+/* 主轴方向 main */
+
+.m-start {
+  justify-content: flex-start;
+}
+
+.m-end {
+  justify-content: flex-end;
+}
+
+.m-around {
+  justify-content: space-around;
+}
+
+.m-between {
+  justify-content: space-between;
+}
+
+.m-center {
+  justify-content: center;
+}
+
+/* 侧轴方向 second*/
+
+.s-start {
+  align-items: flex-start;
+}
+
+.s-end {
+  align-items: flex-end;
+}
+
+.s-around {
+  align-items: space-around;
+}
+
+.s-between {
+  align-items: space-between;
+}
+
+.s-center {
+  align-items: center;
+}
+
+.block {
+  display: block;
+}
+
+.inline {
+  display: inline-block;
+}
+
+/** 文字显示与隐藏 */
+.text-content {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.ellipsis {
+  -webkit-line-clamp: 2;
+}
+
+.unellipsis {
+  -webkit-line-clamp: 0;
+}
+
+.font-weight {
+  font-weight: bold;
+}
+
+.text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.m-t-20 {
+  margin-top: 10px;
+}
+
+.m-t-b-20 {
+  margin: 10px auto;
+}
+
+.btn {
+  width: 100%;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  border-radius: 8px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.btn-sm {
+  width: auto;
+  height: 24px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-default {
+  background-color: #ffffff;
+  color: #666666;
+}
+
+.btn-primary {
+  background-color: #0053d3;
+  color: #ffffff;
+}
+
+.btn-danger {
+  background-color: #ea3c3c;
+  color: #ffffff;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@font-face {
+  font-family: 'iconfont';
+  /* project id 1019956 */
+  src: url('//at.alicdn.com/t/font_1019956_y5t4jt8t5i.eot');
+  src: url('//at.alicdn.com/t/font_1019956_y5t4jt8t5i.eot?#iefix') format('embedded-opentype'), url('//at.alicdn.com/t/font_1019956_y5t4jt8t5i.woff2') format('woff2'), url('//at.alicdn.com/t/font_1019956_y5t4jt8t5i.woff') format('woff'), url('//at.alicdn.com/t/font_1019956_y5t4jt8t5i.ttf') format('truetype'), url('//at.alicdn.com/t/font_1019956_y5t4jt8t5i.svg#iconfont') format('svg');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 15px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrow-up:before {
+  content: "\e628";
+}
+
+.icon-arrow-right:before {
+  content: "\e629";
+}
+
+.icon-arrow-down:before {
+  content: "\e62a";
+}
+
+/* 菜单选择模块 */
+.single-multi-foo-menu {
+  position: absolute;
+  z-index: 70 !important;
+  width: 100%;
+  bottom: 0;
+}
+
+.single-multi-menu-active .single-multi-top-nav-bar {
+  z-index: 80;
+}
+
+.single-multi-top-nav-bar {
+  position: relative;
+  background-color: #008ae6;
+  color: #fff;
+}
+
+.menu-mask4 {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.4;
+  z-index: 69;
+}
+
+::ng-deep .am-list-content {
+  font-size: 14px !important;
+}
+
+::ng-deep .am-list-extra {
+  font-size: 14px !important;
+}
+
+
+.pic-remove {
+  background-color: rgba(0, 0, 0, 0.8);
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABwklEQVRYR+2Wu0peQRSFv4XBS95CIY2tBLEypFBBNAgm+BI+ghY+gvgQQqKihUpsUolFsLPT99CIbBmYPwzHOXP7BRtPe/bM+thrX0a88ac31ucd4EUGzGwS2AMmgB1Jf4axyczmgW3gH7Ap6Ta8LwZwAqz4IHfom6TzFggz+wK4s2P+/F9Jn3MAN8B0ENQEERF3V15LmskBrAIHwIdWiB7xJ5dZSWdJAPfTzJohEuLfJR11rextQw9xCIyUZqJW3N2bnANmtg7sl0C0iGcBvB1ZiFbxIoAcBHDfaTV3xBVc1PPiGugG9tjx4GoWGA/ii8WLMzC4vAciZK0SrwZI2FGV9uwcSI1dM1sDfnY6YwCwIelXzdiuWscJ8YGms6AKohigR/zRV3y3CIshigAS4sse4DTYeFV2ZAFS4pIufGF+BZogcqM4VnAu7csD8aBFmyBSy6hYvAPh1u1oZzD11kQUoCTtfa1mZkvAcSlE7Em24P0M13A07Q0QPyS5Ff//iwFcAbNBTJV4YEcsE7eSPuUALoE5H9QknoD4LWkxBzAF7AIfX+lZ7l7GW4DbnO5ZfjfULqiZ8yWx2UFUcskwMe8Azzhc9CGchoDWAAAAAElFTkSuQmCC');
+  background-repeat: no-repeat;
+  background-size: 60% 60%;
+  background-position: center center;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 21px;
+  top: -8px;
+  padding: 5px;
+  border-radius: 100%;
+  z-index: 800;
+}
+
+
+.image-list {
+  margin-left: -10px;
+  margin-top: -10px;
+  background-color: #fff;
+  min-height: 110px;
+  padding: 10px;
+}
+
+.image-picker {
+  font-size: 0;
+}
+
+.image-picker,
+.image-preview {
+  display: inline-block;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.image-preview {
+  position: relative;
+}
+
+:host ::ng-deep .weui-uploader__input {
+  height: 80px;
+  width: 80px;
+  margin-right: 10px
+}

@@ -1,0 +1,11 @@
+@import '../../common.css';
+
+.from {
+    background: #fff;
+    padding: 10px;
+    border-bottom: 1px solid #dfdfdf;
+}
+
+.from_cell {
+    
+}
